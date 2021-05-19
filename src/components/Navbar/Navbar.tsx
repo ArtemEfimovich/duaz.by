@@ -1,21 +1,24 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import s from './Navbar.module.css'
+import {Col, Container, Nav, Row} from "react-bootstrap";
+import { Body } from '../Body/Body';
 
 const Navbar = () => {
     return (
-        <nav className={s.nav}>
-            <div className={s.item}>
-                <NavLink to="/Rentals">Аренда/Прокат</NavLink>
-            </div>
-            <div className={s.item}>
-                <NavLink to="/Services">Услуги</NavLink>
-            </div>
-            <div className={s.item}>
-                <NavLink to="/Catalog"> Каталог</NavLink>
-
-            </div>
-        </nav>
+        <div  className={s.container}>
+            <Container>
+                <Row className="justify-content-left">
+                    <Col xs='auto'>
+                            <Nav.Link href="#rentals">Аренда/Прокат</Nav.Link>
+                            <Nav.Link href="#services">Услуги</Nav.Link>
+                            <Nav.Link href="#catalog">Каталог</Nav.Link>
+                    </Col>
+                    <Col md="auto">
+                        <Body/>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     )
 }
 

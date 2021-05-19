@@ -1,15 +1,7 @@
 
-.nav{
-    grid-area: n;
-    background-color: khaki;
-    padding: 30px;
-}
+.container {
 
-.item a{
-    color:white;
-    text-decoration: none;
-}
-
-.item a.activeLink{
-    color: darkcyan;
+    display: flex;
+    margin-top: 50px;
+    margin-right: 500px;
 }
