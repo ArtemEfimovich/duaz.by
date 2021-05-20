@@ -1,0 +1,13 @@
+.imgLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.image {
+    padding-bottom: 100px;
+    padding-left: 100px;
+    width: 400px;
+    height: 400px;
+}
+
